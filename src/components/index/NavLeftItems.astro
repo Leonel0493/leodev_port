@@ -1,0 +1,16 @@
+---
+// * Props
+const { displayName, url, hexColor } = Astro.props;
+---
+
+<div class="flex-auto mb-10 pl-5 pr-3 transform-[rotate(-90deg)]">
+  <a
+    href={url}
+    class=`text-[#1a1818] font-JetBrains-Mono text-center tracking-[5px] uppercase font-bold text-xs block`
+    style={`--hover-color: #${hexColor};`}
+    onmouseover="this.style.color = 'var(--hover-color)'"
+    onmouseout="this.style.color = '#1a1818'"
+  >
+    {displayName}
+  </a>
+</div>
