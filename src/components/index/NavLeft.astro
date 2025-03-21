@@ -1,0 +1,16 @@
+---
+import NavLeftItems from "./NavLeftItems.astro";
+import NavLine from "./NavLine.astro";
+import NavCopyright from "./NavCopyright.astro";
+---
+
+<div
+  id="left-nav"
+  class="w-[6%] h-screen flex-col justify-start pt-[5%] pb-7 z-50 fixed"
+>
+  <NavLeftItems displayName="li" url="#" hexColor="3A94c5" />
+  <NavLeftItems displayName="tw" url="#" hexColor="5C6A72" />
+  <NavLeftItems displayName="gh" url="#" hexColor="DF69BA" />
+  <NavLine />
+  <NavCopyright />
+</div>
