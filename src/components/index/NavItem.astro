@@ -1,0 +1,12 @@
+---
+// * Props
+const { displayName, url } = Astro.props;
+---
+
+<div class="opacity-[1] blur-[0px] text-right pr-[5%] inline-block relative">
+  <a
+    href={url}
+    class="z-10 text-[#5C6A72] uppercase font-Boldonse text-[11vw] font-light leading-[.95em] block relative"
+    >{displayName}</a>
+  <div class="z-[9] w-full h-[6px] absolute bottom-[" style="transform: translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+</div>

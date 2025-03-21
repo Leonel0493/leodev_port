@@ -4,7 +4,17 @@ import animations from "@midudev/tailwind-animations";
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,ts,tsx,vue,svelte}"],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        slideDown: {
+          "0%": { height: "0vh" },
+          "100%": { height: "100vh" },
+        },
+      },
+      animation: {
+        slideDown: "slideDown 1s ease-in forwards",
+      },
+    },
   },
   plugins: [animations],
 };
